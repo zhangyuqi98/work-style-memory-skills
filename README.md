@@ -31,6 +31,10 @@ It helps an agent:
 
 The workflow library lives in local JSON files so it can be safely edited by scripts, the UI, or the user directly.
 
+## UI Preview
+
+![Work Style Memory UI](./assets/ui-screenshot.png)
+
 ## Core Ideas
 
 - Workflows are structured memory, not giant prompts.
