@@ -328,6 +328,7 @@ textarea {
   max-height: calc(100vh - 340px);
   overflow: auto;
   padding-right: 4px;
+  contain: layout paint;
 }
 
 .workflow-item {
@@ -420,6 +421,7 @@ textarea {
     linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.028));
   backdrop-filter: blur(24px) saturate(140%);
   box-shadow: var(--shadow);
+  contain: layout paint;
 }
 
 .tab-buttons {
@@ -466,6 +468,7 @@ textarea {
     transform 240ms var(--ease-fluid),
     border-color 240ms var(--ease-fluid),
     box-shadow 240ms var(--ease-fluid);
+  contain: layout paint;
 }
 
 .card:hover {
@@ -538,6 +541,7 @@ label span {
 .rows {
   display: grid;
   gap: 14px;
+  contain: layout paint;
 }
 
 .row {
@@ -548,7 +552,9 @@ label span {
   border-radius: var(--radius-md);
   border: 1px dashed rgba(120, 207, 255, 0.18);
   background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(14px);
+  contain: layout paint;
+  content-visibility: auto;
+  contain-intrinsic-size: 96px;
 }
 
 .row.two {
@@ -583,6 +589,12 @@ label span {
 
 .row.step-row input[data-field="third"] {
   min-height: 52px;
+}
+
+.row.step-row textarea[data-field="second"] {
+  min-height: 52px;
+  resize: none;
+  overflow: hidden;
 }
 
 .json-card pre {
@@ -636,6 +648,22 @@ label span {
   }
   to {
     transform: translate3d(-1.5%, 1%, 0) rotate(1deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before,
+  body::after,
+  .sidebar-top,
+  .panel,
+  .workflow-item,
+  .card,
+  .button,
+  .workflow-item:hover,
+  .card:hover {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
   }
 }
 
