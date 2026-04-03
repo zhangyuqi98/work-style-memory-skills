@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Scaffold a workflow JSON file for the work-style-memory skill.
+Scaffold a workflow JSON file for the WorkflowHub skill.
 """
 
 from __future__ import annotations

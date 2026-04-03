@@ -1,8 +1,8 @@
-# Work Style Memory
+# WorkflowHub
 
 ## Overview
 
-`work-style-memory` is a workflow memory skill for repeated multi-step tasks.
+`WorkflowHub` is a workflow memory skill for repeated multi-step tasks.
 
 It helps an agent:
 
@@ -85,7 +85,7 @@ Notes:
 ## Main Files
 
 ```text
-work-style-memory/
+workflowhub/
 ├── SKILL.md
 ├── instruction.md
 ├── agents/openai.yaml
@@ -234,7 +234,7 @@ Install by copying the skill folder into the host product's local skills directo
 Example:
 
 ```bash
-cp -R work-style-memory /path/to/skills/
+cp -R workflowhub /path/to/skills/
 ```
 
 After installation, restart the host product or open a new session/thread.

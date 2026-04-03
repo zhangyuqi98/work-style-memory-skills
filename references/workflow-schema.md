@@ -1,6 +1,6 @@
 # Workflow Schema
 
-Use this reference when creating, editing, validating, or explaining workflow files for `work-style-memory`.
+Use this reference when creating, editing, validating, or explaining workflow files for `workflowhub`.
 
 ## Goals
 

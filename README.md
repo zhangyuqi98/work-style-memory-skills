@@ -1,10 +1,10 @@
-# Work Style Memory
+# WorkflowHub
 
 Turn repeated multi-step tasks into reusable local workflows for Codex, OpenClaw, or similar agent runtimes.
 
 ## 中文简介
 
-`work-style-memory` 是一个把“你的做事方式”沉淀成本地 workflow / SOP 的 skill。
+`WorkflowHub` 是一个把“你的做事方式”沉淀成本地 workflow / SOP 的 skill。
 
 它适合这样的场景：
 
@@ -20,7 +20,7 @@ Turn repeated multi-step tasks into reusable local workflows for Codex, OpenClaw
 
 ## Overview
 
-`work-style-memory` is a local skill for turning repeated multi-step tasks into reusable workflows.
+`WorkflowHub` is a local skill for turning repeated multi-step tasks into reusable workflows.
 
 It helps an agent:
 
@@ -33,7 +33,7 @@ The workflow library lives in local JSON files so it can be safely edited by scr
 
 ## UI Preview
 
-![Work Style Memory UI](./assets/ui-screenshot.png)
+![WorkflowHub UI](./assets/ui-screenshot.png)
 
 ## Core Ideas
 
@@ -157,18 +157,18 @@ Runtime matching and reuse prompts should happen in the agent conversation flow,
 Copy the folder into your host product's local skills directory and restart the host or open a new session.
 
 ```bash
-cp -R work-style-memory /path/to/skills/
+cp -R workflowhub /path/to/skills/
 ```
 
 Typical workflow storage locations:
 
 - project-local: `./.openclaw/workflows`
-- personal global store: `$CODEX_HOME/work-style-memory/workflows`
+- personal global store: `$CODEX_HOME/workflowhub/workflows`
 
 ## Project Structure
 
 ```text
-work-style-memory/
+workflowhub/
 ├── SKILL.md
 ├── instruction.md
 ├── assets/

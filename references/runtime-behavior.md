@@ -20,7 +20,7 @@ This confirmation is mandatory unless the user explicitly asked in the current t
 Recommended workflow directory order:
 
 1. `./.openclaw/workflows`
-2. `$CODEX_HOME/work-style-memory/workflows`
+2. `$CODEX_HOME/workflowhub/workflows`
 
 ## Suggested User-Facing Prompt
 

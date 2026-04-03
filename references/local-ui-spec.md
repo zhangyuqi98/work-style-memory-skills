@@ -1,6 +1,6 @@
 # Local UI Spec
 
-This reference describes the minimum useful local UI for the `work-style-memory` skill.
+This reference describes the minimum useful local UI for the `workflowhub` skill.
 
 ## Product Goal
 
@@ -23,7 +23,7 @@ A runnable MVP is included at:
 Launch it with:
 
 ```bash
-python3 /Users/zyq/Desktop/skills/work-style-memory/ui/server.py --dir ./.openclaw/workflows
+python3 /Users/zyq/Desktop/skills/workflowhub/ui/server.py --dir ./.openclaw/workflows
 ```
 
 Then open `http://127.0.0.1:8765`.

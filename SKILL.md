@@ -1,9 +1,9 @@
 ---
-name: work-style-memory
+name: workflowhub
 description: Use when the user wants OpenClaw or Codex to remember their way of working as reusable SOPs, workflows, queues, or "how I do things". Best for repeated multi-step tasks where the agent should proactively check saved workflows before starting, ask whether to reuse an existing SOP when there is a strong match, and ask whether to save or update a workflow after the task.
 ---
 
-# Work Style Memory
+# WorkflowHub
 
 ## Overview
 
@@ -31,7 +31,7 @@ The skill works in four phases:
 The workflow library should be editable outside the skill. The recommended storage layout is:
 
 - Project-specific workflows: `.openclaw/workflows/*.json`
-- Personal cross-project workflows: `$CODEX_HOME/work-style-memory/workflows/*.json`
+- Personal cross-project workflows: `$CODEX_HOME/workflowhub/workflows/*.json`
 
 Prefer project-local workflows when the process is tied to a repository, team, or codebase. Prefer the global store when the process reflects the user's personal way of working across contexts.
 

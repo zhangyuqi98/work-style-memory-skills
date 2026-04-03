@@ -302,12 +302,12 @@ def default_workflows_dir() -> Path:
         return cwd
     codex_home = os.environ.get("CODEX_HOME")
     if codex_home:
-        return Path(codex_home) / "work-style-memory" / "workflows"
+        return Path(codex_home) / "workflowhub" / "workflows"
     return cwd
 
 
 def parse_args() -> AppConfig:
-    parser = argparse.ArgumentParser(description="Run the Work Style Memory local UI.")
+    parser = argparse.ArgumentParser(description="Run the WorkflowHub local UI.")
     parser.add_argument("--host", default="127.0.0.1", help="Host to bind")
     parser.add_argument("--port", type=int, default=8765, help="Port to bind")
     parser.add_argument(
@@ -331,7 +331,7 @@ def main() -> None:
         raise SystemExit(1)
     server = ThreadingHTTPServer((config.host, config.port), WorkflowHandler)
     server.config = config  # type: ignore[attr-defined]
-    print(f"Work Style Memory UI running at http://{config.host}:{config.port}")
+    print(f"WorkflowHub UI running at http://{config.host}:{config.port}")
     print(f"Workflow directory: {config.workflows_dir}")
     try:
         server.serve_forever()
